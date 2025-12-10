@@ -68,6 +68,8 @@ Works best using Gtk theme "adw".
 
 For the complete list, refer to [keybindings.conf](https://github.com/fdev31/dotfiles/blob/main/home/.config/hypr/sources/keybindings.conf)
 
+Using AZERTY layout, you may want to change the `q a m , w z` keys bindings and some others to make it more comfortable.
+
 ### Zsh
 
 - End a command with '**' to complete every file below the path under cursor
