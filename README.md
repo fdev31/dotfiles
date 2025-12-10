@@ -8,10 +8,10 @@ Currently using:
 
 - [ashell](https://github.com/MalpenZibo/ashell/)
 - [pyprland](https://github.com/fdev31/pyprland)
-- zsh
-- kitty
+- zsh (replacing it seems futile)
+- kitty (the best terminal emulator so far)
 - matugen
-- hyprpaper
+- hyprpaper (bug-free when it comes to screen transformation - unlike swww and even swaybg)
 - hyprlock
 - hypridle
 - ...
