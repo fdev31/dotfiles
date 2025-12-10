@@ -49,4 +49,4 @@ For the complete list, refer to [keybindings.conf](https://github.com/fdev31/dot
 
 ## Special thanks to
 
-- [Axenide/Ax-shell](https://github.com/Axenide/Ax-Shell) for the mutagen support and making me appreciate rounded corners
+- [Axenide/Ax-shell](https://github.com/Axenide/Ax-Shell) for the matugen support and making me appreciate rounded corners
