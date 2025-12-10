@@ -1,13 +1,30 @@
 # fab's desktop environment
 
-Dotfiles for an hyprland based desktop.
+Now using Hyprland, I'm a former (or very occasional) user of:
+
+- qtile
+- awesome
+- gnome/kde
+- cinnamon/mate
+- enlightenment (e16/e17)
+- xfce
+- pekwm/openbox/fluxbox/windowmaker/fvwm
+- ratpoison and other fun stuff for some moments ;)
+
+I built my requirements over time as a software engineer,
+trying to maintain some usable modern desktop environment configuration based on the best light (not lightest!) options I can find for my own usage.
+
+This is an "export" of the main files I'm using, with some small automated adaptations to make them more generic.
+
+Report any bug so I can improve those and share it again.
 
 ![image](https://raw.githubusercontent.com/fdev31/dotfiles/refs/heads/main/screenshots/1.png)
 
 Currently using:
 
-- [ashell](https://github.com/MalpenZibo/ashell/)
-- [pyprland](https://github.com/fdev31/pyprland)
+- Hyprland (looking at Niri - good but less flexible)
+- [ashell](https://github.com/MalpenZibo/ashell/) (the smallest footprint for the features)
+- [pyprland](https://github.com/fdev31/pyprland) (the glue, helps with configuration and adds fine UX features)
 - zsh (replacing it seems futile)
 - kitty (the best terminal emulator so far)
 - matugen
