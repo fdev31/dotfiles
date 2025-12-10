@@ -50,14 +50,14 @@ Works best using Gtk theme "adw".
 
 ### Hyprland
 
-- `Ctrl+w` to open a web browser
-- `Ctrl+Enter` to open a shell
-- `Ctrl+t` to open a file browser scratchpad
-- `Ctrl+a` to open a shell scratchpad
-- `Ctrl+v` to open a volume scratchpad
-- `Ctrl+c` to close a window
-- `Ctrl+e` to start or focus some program
-- `Ctrl+r` to run commands from the [custom menu](https://github.com/fdev31/dotfiles/blob/main/home/.config/hypr/pyprland.d/shortcuts.toml)
+- `Mod+w` to open a web browser
+- `Mod+Enter` to open a shell
+- `Mod+t` to open a file browser scratchpad
+- `Mod+a` to open a shell scratchpad
+- `Mod+v` to open a volume scratchpad
+- `Mod+c` to close a window
+- `Mod+e` to start or focus some program
+- `Mod+r` to run commands from the [custom menu](https://github.com/fdev31/dotfiles/blob/main/home/.config/hypr/pyprland.d/shortcuts.toml)
 - `Mod+Arrows` with common modifiers to manipulate client windows
 - `Mod+k` and `Mod+j` with common modifiers to manipulate workspaces (carrying focused window with `SHIFT`)
 - `Mod+Shift+,` change the wallpaper and update every colors (vim, kitty, hyprland, ...).
