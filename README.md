@@ -8,6 +8,7 @@ Now using Hyprland, I'm a former (or very occasional) user of:
 - cinnamon/mate
 - enlightenment (e16/e17)
 - xfce
+- ROX desktop
 - pekwm/openbox/fluxbox/windowmaker/fvwm
 - ratpoison and other fun stuff for some moments ;)
 
