@@ -58,7 +58,7 @@ Works best using Gtk theme "adw".
 - `Mod+c` to close a window
 - `Mod+e` to start or focus some program
 - `Mod+r` to run commands from the [custom menu](https://github.com/fdev31/dotfiles/blob/main/home/.config/hypr/pyprland.d/shortcuts.toml)
-- `Mod+Arrows` with common modifiers to manipulate client windows
+- `Mod+Arrows` with optional modifiers to operate on the focused window
 - `Mod+k` and `Mod+j` with common modifiers to manipulate workspaces (carrying focused window with `SHIFT`)
 - `Mod+Shift+,` change the wallpaper and update every colors (vim, kitty, hyprland, ...).
     Check [wallpapers.toml](https://github.com/fdev31/dotfiles/blob/main/home/.config/hypr/pyprland.d/wallpapers.toml) for the configuration.
