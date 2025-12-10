@@ -1,6 +1,6 @@
 # fab's desktop environment
 
-Now using Hyprland, I'm a former (or very occasional) user of:
+Now using Hyprland, I'm a former user of:
 
 - qtile
 - awesome
