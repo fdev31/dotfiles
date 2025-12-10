@@ -1,0 +1,34 @@
+[pyprland]
+include = [
+    "~/.config/hypr/pyprland.d",
+]
+plugins = [
+    "toggle_special",
+    "lost_windows",
+    "toggle_special",
+    "shift_monitors",
+    "toggle_dpms",
+    "magnify",
+    "expose",
+    "menubar",
+    "shift_monitors",
+    "workspaces_follow_focus",
+    "fetch_client_menu",
+]
+
+[workspaces_follow_focus]
+max_workspaces = 9
+
+[expose]
+include_special = false
+
+[menubar]
+command = "uwsm app -- ashell"
+__command = "uwsm app -- python ~/.config/Ax-Shell/main.py"
+_command = "uwsm app -- way-edges"
+monitors = [
+    "eDP-1",
+    "DP-1",
+    "HDMI-A-1",
+]
+

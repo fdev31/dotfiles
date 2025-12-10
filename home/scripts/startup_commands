@@ -1,0 +1,8 @@
+#!/bin/sh
+(sleep 4 ; sh ~/scripts/openrgb.sh) &
+nwg-look -a
+hyprpm reload -n
+setxkbmap fr
+cliphist wipe
+gammastep-indicator -t 6000:3500
+~/liberty/openCodeWrapper.sh

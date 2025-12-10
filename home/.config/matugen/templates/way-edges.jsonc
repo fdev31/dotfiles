@@ -1,0 +1,143 @@
+// XXX: Generated file (matugen) - DO NOT EDIT
+
+{
+    "$schema": "./schema.json",
+    "widgets": [
+        {
+            "namespace": "activewindow",
+            "type": "wrap-box",
+            "edge": "bottom",
+            "position": "bottom",
+            "monitor": "*",
+            "layer": "top",
+            "preview-size": 16,
+            "color": "{{colors.surface.default.hex}}",
+            "default-color": "{{colors.on_primary.default.hex}}",
+            "align": "bottom-left",
+            "outlook": {
+                "type": "board",
+                "color": "{{colors.surface.default.hex}}",
+                "default-color": "{{colors.on_primary.default.hex}}",
+                "fg-color": "{{colors.primary.default.hex}}",
+            },
+            "items": [{
+                "type": "text",
+                "fg-color": "{{colors.primary.default.hex}}",
+                "font-size": 10,
+                "preset": {
+                    "type": "custom",
+                    "cmd": "hyprctl activewindow -j | jq -r '.title'",
+                    "update-interval": 1000, // ms
+                }
+            }
+            ],
+        },
+        // =========== workspace ===========
+        {
+            "type": "workspace",
+            "edge": "bottom",
+            "position": "bottom",
+            "layer": "overlay",
+            "monitor": "*",
+            "thickness": 16,
+            "length": "10%",
+            "hover-color": "{{colors.surface.default.hex}}",
+            "active-increase": 0.2,
+            "gap": 5,
+            "border-radius": 5,
+            "active-color": "#fff",
+            "focus-color": "{{colors.primary.default.hex}}",
+            "default-color": "{{colors.on_primary.default.hex}}",
+            "focused-only": true,
+            "preset": "hyprland",
+            "margins": {
+                "bottom": 20
+            }
+        },
+        {
+            "edge": "left",
+            "monitor": "*",
+            "layer": "overlay",
+            "position": "left",
+            "preview-size": 0,
+            "type": "slider",
+            "thickness": 40,
+            "border-width": 3,
+            "length": "20%",
+            "radius": 50,
+            "obtuse-angle": 127,
+
+            "fg-text-color": "{{colors.primary.default.hex}}",
+            "bg-text-color": "{{colors.on_primary.default.hex}}",
+            "fg-color": "{{colors.on_primary.default.hex}}",
+            "bg-color": "{{colors.primary.default.hex}}",
+            "border-color": "{{colors.primary.default.hex}}",
+
+            "redraw-only-on-internal-update": false,
+            "preset": {
+                "type": "speaker"
+            }
+        },
+        {
+            "edge": "left",
+            "monitor": "*",
+            "position": "top",
+            "layer": "overlay",
+            "margins": {
+            },
+            "preview-size": 0,
+            "type": "slider",
+            "thickness": 40,
+            "border-width": 3,
+            "length": "20%",
+            "radius": 50,
+            "obtuse-angle": 127,
+
+            "fg-text-color": "{{colors.tertiary.default.hex}}",
+            "bg-text-color": "{{colors.on_tertiary.default.hex}}",
+            "fg-color": "{{colors.on_tertiary.default.hex}}",
+            "bg-color": "{{colors.tertiary.default.hex}}",
+            "border-color": "{{colors.tertiary.default.hex}}",
+            "redraw-only-on-internal-update": true,
+            "preset": {
+                "type": "microphone"
+            }
+        },
+        {
+            "namespace": "tray",
+            "edge": "bottom",
+            "preview-size": 0,
+            "position": "right",
+            // "monitor": ["DP-1", "HDMI-A-1"],
+            "monitor": "*",
+            "layer": "overlay",
+            "type": "wrap-box",
+            "align": "bottom-left",
+            "outlook": {
+                "type": "window",
+                "color": "{{colors.surface.default.hex}}",
+            },
+            "items": [
+                {
+                    "font-family": "sans-serif",
+                    "type": "tray",
+                    "icon-size": 32,
+                    "header-menu-stack": "menu-top",
+                    "header-menu-align": "left",
+                    "menu-draw-config": {
+                        "margin": [5,5],
+                        "separator-height": 10,
+                        "border-color": "#00000000",
+                        "text-color": "{{colors.secondary.default.hex}}",
+                        "marker-color": "{{colors.primary.default.hex}}"
+                    },
+                    "header-draw-config": {
+                        "text-color": "#eee"
+                    },
+                    "grid-align": "bottom-left"
+                }
+            ],
+
+        }
+    ]
+}

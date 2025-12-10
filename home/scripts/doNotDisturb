@@ -1,0 +1,48 @@
+#!/bin/sh
+D=1 # Duration
+
+skipNotif=
+
+# Detect which notification system is in use + provide functions
+if ps axuw |grep swaync ; then
+    function getStatus() {
+        swaync-client -D
+    }
+    function toggleStatus() {
+        swaync-client -d
+        if [ "$1" == "false" ] ; then
+            swaync-client -op
+        else
+            swaync-client -cp
+        fi
+    }
+elif  ps ax |grep -E 'dunst$' |grep -v grep ; then
+    function getStatus() {
+        dunstctl is-paused
+    }
+    function toggleStatus() {
+        dunstctl set-paused $1
+    }
+else # XFCE4
+    function getStatus() {
+        xfconf-query -c xfce4-notifyd -p /do-not-disturb
+    }
+    function toggleStatus() {
+        xfconf-query -c xfce4-notifyd -p /do-not-disturb -s $1
+    }
+fi
+
+# Implementation
+cur=$(getStatus)
+
+if [ $cur = "false" ] ; then
+    setto="true"
+else
+    setto="false"
+fi
+
+[ ! $skipNotif ] && [ "${cur}" = "false" ] && (notify-send -t ${D}000 "Do not disturb"; sleep $D)
+
+toggleStatus ${setto}
+
+[ ! $skipNotif ] && [ "${cur}" = "true" ] && notify-send -t ${D}000 "Notifications ON"

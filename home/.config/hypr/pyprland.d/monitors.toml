@@ -1,0 +1,29 @@
+[pyprland]
+plugins = [
+    "monitors",
+]
+
+[monitors]
+relayout_on_config_change = true
+
+[monitors.placement.CJFH27888CUB]
+top_middle_of = "eDP-1"
+
+[monitors.placement.CJFH277Q3HCB]
+left_end_of = "eDP-1"
+transform = 1
+scale = 0.83
+
+[monitors.placement.BenQ]
+top_middle_of = "DP-1"
+
+[monitors.placement.Microstep]
+rate = 100
+top_middle_of = "eDP-1"
+disables = []
+
+[monitors.placement.Hisense]
+top_middle_of = "DP-1"
+resolution = "1920x1080"
+rate = 120
+

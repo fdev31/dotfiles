@@ -1,0 +1,15 @@
+[pyprland]
+plugins = [
+    "wallpapers",
+]
+
+[wallpapers]
+path = "~/Images/wallpapers/"
+interval = 60
+unique = false
+recurse = true
+_command = "swww img -t wave --outputs [output] --transition-duration 0.3 --transition-fps 30  [file]"
+command = "hyprctl hyprpaper 'preload [file]'; hyprctl hyprpaper wallpaper '[output], [file]'"
+post_command = "matugen image [file]"
+radius = 16
+

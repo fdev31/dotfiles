@@ -1,0 +1,15 @@
+[Unit]
+Description=Starts wl-paste daemon
+After=graphical-session.target
+Wants=graphical-session.target
+StartLimitIntervalSec=600
+StartLimitBurst=5
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/wl-paste --watch cliphist store
+Restart=always
+
+
+[Install]
+WantedBy=graphical-session.target

@@ -1,0 +1,15 @@
+[Unit]
+Description=Starts buckle daemon
+After=graphical-session.target
+Wants=graphical-session.target
+StartLimitIntervalSec=600
+StartLimitBurst=5
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/buckle -g 10
+Restart=always
+
+
+[Install]
+WantedBy=graphical-session.target

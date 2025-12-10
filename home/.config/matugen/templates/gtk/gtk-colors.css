@@ -1,0 +1,253 @@
+/*
+* GTK Colors
+* Generated with Matugen - XXX: DO NOT EDIT
+
+/* Base selection styling */
+*:selected,
+*:selected:focus,
+.view:selected,
+.view:selected:focus,
+iconview:selected,
+iconview:selected:focus,
+treeview.view:selected,
+treeview.view:selected:focus,
+row:selected,
+row:selected:focus,
+entry selection,
+entry selection:focus,
+textview selection,
+textview selection:focus,
+menuitem button.flat:checked,
+menuitem button.flat:checked:hover {
+    background-color: {{colors.secondary.default.hex}};
+    color: {{colors.on_secondary.default.hex}};
+}
+
+/* Sidebar selection */
+.sidebar .view:selected,
+.sidebar row:selected,
+.sidebar row:selected:hover {
+    background-color: {{colors.secondary.default.hex}};
+    color: {{colors.on_secondary.default.hex}};
+}
+
+/* Progress bars */
+progressbar progress,
+progressbar.horizontal progress,
+progressbar.vertical progress,
+.view progressbar progress,
+.view progressbar.horizontal progress,
+.view progressbar.vertical progress {
+    background-color: {{colors.secondary.default.hex}};
+}
+
+progressbar through,
+progressbar.horizontal through,
+progressbar.vertical through,
+.view progressbar through,
+.view progressbar.horizontal through,
+.view progressbar.vertical through {
+    background-color: {{colors.background.default.hex}};
+}
+
+/* Checkboxes and Radio buttons */
+check,
+radio {
+    /* background-color: {{colors.secondary.default.hex}}; */
+    /* border: 1px solid @{{colors.primary.default.hex}}; */
+    /* border-color: @{{colors.primary.default.hex}}; */
+    color: {{colors.on_background.default.hex}};
+}
+
+/* check:checked, */
+/* radio:checked { */
+/*     background-color: @{{colors.primary.default.hex}}; */
+/*     border-color: @{{colors.primary.default.hex}}; */
+/*     color: {{colors.on_primary.default.hex}}; */
+/* } */
+
+check:indeterminate,
+radio:indeterminate {
+    background-color: {{colors.tertiary.default.hex}};
+    border-color: {{colors.tertiary.default.hex}};
+    color: {{colors.on_tertiary.default.hex}};
+}
+
+check:hover,
+radio:hover,
+checkbutton check:hover,
+radiobutton radio:hover {
+    background-color: {{colors.secondary.default.rgba | set_alpha: 0.2}};
+}
+
+check:active,
+radio:active,
+checkbutton check:active,
+radiobutton radio:active {
+    background-color: {{colors.secondary.default.rgba | set_alpha: 0.2}};
+}
+
+/* Menu items */
+menu menuitem:hover,
+menu menuitem.flat:hover,
+menuitem:hover,
+menuitem.flat:hover,
+popover.menu check:hover,
+popover.menu radio:hover,
+popover.menu menuitem:hover {
+    background-color: {{colors.secondary.default.rgba | set_alpha: 0.2}};
+    color: {{colors.on_background.default.hex}};
+}
+
+menu menuitem:active,
+menu menuitem.flat:active,
+menuitem:active,
+menuitem.flat:active {
+    background-color: {{colors.secondary.default.rgba | set_alpha: 0.2}};
+    color: {{colors.on_background.default.hex}};
+}
+
+menu menuitem:checked,
+menu menuitem.flat:checked,
+menuitem:checked,
+menuitem.flat:checked,
+popover.menu check:checked,
+popover.menu radio:checked {
+    background-color: {{colors.secondary.default.hex}};
+    color: {{colors.on_secondary.default.hex}};
+}
+/* Scales/Sliders */
+scale through {
+    background-color: {{colors.secondary.default.hex}};
+
+}
+scale through highlight,
+scale through fill {
+    background-color: {{colors.secondary.default.hex}};
+}
+
+scale slider:hover,
+scale slider:active {
+    background-color: {{colors.primary.default.rgba}};
+    border-color: {{colors.primary.default.hex}};
+}
+
+/* Tabs */
+notebook > header > tabs > tab:checked,
+notebook > header > tabs > tab:selected,
+notebook > header > tabs > tab:active {
+    background-color: {{colors.secondary.default.rgba | set_alpha: 0.35}};
+    /* color: {{colors.on_secondary.default.hex}}; */
+}
+
+notebook > header > tabs > tab:hover {
+    background-color: {{colors.secondary.default.rgba | set_alpha: 0.2}};
+    color: {{colors.on_background.default.hex}};
+}
+
+/* Buttons */
+button:hover {
+    background-color: {{colors.secondary.default.rgba | set_alpha: 0.2}};
+    color: {{colors.on_background.default.hex}};
+}
+
+button:active,
+button:checked {
+    background-color: {{colors.secondary.default.rgba | set_alpha: 0.35}};
+    /* color: {{colors.on_secondary.default.hex}}; */
+}
+/* Lists and List Boxes */
+list row:selected,
+listbox row:selected {
+    background-color: {{colors.secondary.default.hex}};
+    color: {{colors.on_secondary.default.hex}};
+}
+
+list row:selected:hover,
+listbox row:selected:hover {
+    background-color: {{colors.secondary.default.hex}};
+    color: {{colors.on_secondary.default.hex}};
+}
+
+/* Header bars and title bars */
+headerbar selection,
+headerbar entry selection {
+    background-color: {{colors.secondary.default.hex}};
+    color: {{colors.on_secondary.default.hex}};
+}
+
+/* Places treeview */
+.places-treeview {
+    background-color: {{colors.secondary.default.rgba | set_alpha: 0.2}};
+}
+
+.places-treeview:selected {
+    background-color: {{colors.secondary.default.hex}};
+    color: {{colors.on_secondary.default.hex}};
+}
+radiobutton radio {
+    color: {{colors.on_secondary.default.hex}};
+}
+
+/* Override adw-gtk3 accent colors with matugen colors */
+@define-color accent_bg_color  {{colors.background.default.hex}};
+@define-color accent_fg_color  {{colors.on_background.default.hex}};
+@define-color accent_color  {{colors.secondary.default.hex}};
+
+/* Alternative CSS custom property format */
+:root {
+  --accent-bg-color: {{colors.background.default.hex}};
+  --accent-fg-color: {{colors.on_background.default.hex}};
+  --accent-color: {{colors.primary.default.hex}};
+}
+/* Override all accent color variables */
+:root {
+  --accent-bg-color: {{colors.primary.default.hex}};
+  --accent-fg-color: {{colors.on_primary.default.hex}};
+  --accent-color: {{colors.primary.default.hex}};
+}
+
+/* Define color variables for easier maintenance */
+@define-color accent_bg_color {{colors.primary.default.hex}};
+@define-color accent_fg_color {{colors.on_primary.default.hex}};
+@define-color accent_color {{colors.primary.default.hex}};
+
+/* Fix sliders - target the highlight/fill portion */
+scale through highlight {
+  background-color: {{colors.secondary.default.hex}};
+  background-image: none;
+}
+
+/* Fix slider handles */
+scale slider {
+  background-color: {{colors.secondary.default.hex}};
+  border-color: {{colors.secondary.default.hex}};
+}
+
+/* Fix tab highlights - target the underline/border */
+notebook > header > tabs > tab:checked {
+  box-shadow: inset 0 -3px {{colors.secondary.default.hex}};
+  border-color: {{colors.secondary.default.hex}};
+}
+
+/* Additional tab styling if needed */
+notebook > header.top > tabs > tab:checked {
+  box-shadow: inset 0 -3px {{colors.primary.default.hex}};
+}
+
+notebook > header.bottom > tabs > tab:checked {
+  box-shadow: inset 0 3px {{colors.secondary.default.hex}};
+}
+
+/* Fix switch toggles */
+switch:checked {
+  background-color: {{colors.secondary.default.hex}};
+  background-image: none;
+}
+
+/* Fix focus rings on entries and other widgets */
+entry:focus,
+button:focus {
+  border-color: {{colors.secondary.default.hex}};
+  box-shadow: inset 0 0 0 1px {{colors.secondary.default.hex}};
+}

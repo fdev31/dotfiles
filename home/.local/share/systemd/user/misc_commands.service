@@ -1,0 +1,15 @@
+[Unit]
+Description=Starts misc commands
+After=graphical-session.target
+Wants=graphical-session.target
+StartLimitIntervalSec=600
+StartLimitBurst=5
+
+[Service]
+Type=simple
+ExecStart=sh ~/scripts/startup_commands
+Restart=never
+
+
+[Install]
+WantedBy=graphical-session.target
