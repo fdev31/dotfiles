@@ -1,0 +1,16 @@
+#!/bin/sh
+
+fname="${@:-1}"
+mime=$(file --mime-type "$fname" | sed 's/^.*: //')
+
+case "$mime" in
+    image/* | application/pdf)
+        exec kitty +kitten icat "$@"
+        ;;
+    video/* | audio/*)
+        exec mpv "$@"
+        ;;
+    *)
+        exec bat -p "$@"
+        ;;
+esac
