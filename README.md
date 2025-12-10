@@ -6,9 +6,9 @@ Dotfiles for an hyprland based desktop.
 
 Currently using:
 
+- [ashell](https://github.com/MalpenZibo/ashell/)
+- [pyprland](https://github.com/fdev31/pyprland)
 - zsh
-- ashell
-- pyprland
 - kitty
 - matugen
 - hyprpaper
