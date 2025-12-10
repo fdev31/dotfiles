@@ -2,6 +2,8 @@
 
 Dotfiles for an hyprland based desktop.
 
+![image](https://raw.githubusercontent.com/fdev31/dotfiles/refs/heads/main/screenshots/1.png)
+
 Currently using:
 
 - zsh
@@ -24,6 +26,8 @@ run `install.sh`
 
 To preview the changes without doing anything, run `install.sh --dry-run`
 
+Works best using Gtk theme "adw".
+
 ## Usage
 
 ### Hyprland
@@ -43,3 +47,6 @@ For the complete list, refer to [keybindings.conf](https://github.com/fdev31/dot
 - End a command with '**' to complete every file below the path under cursor
 - View anything directly in the shell with the `v` command
 
+## Special thanks to
+
+- [Axenide/Ax-shell](https://github.com/Axenide/Ax-Shell) for the mutagen support and making me appreciate rounded corners
