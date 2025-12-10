@@ -73,6 +73,10 @@ For the complete list, refer to [keybindings.conf](https://github.com/fdev31/dot
 - End a command with '**' to complete every file below the path under cursor
 - View anything directly in the shell with the `v` command
 
+## Notes
+
+You can force a specific color for the theme using a command such as `matugen color hex '#AA5533' ` (replace with the RGB code of your choice) or `matugen image /path/to/an/image`
+
 ## Special thanks to
 
 - [Axenide/Ax-shell](https://github.com/Axenide/Ax-Shell) for the matugen support and making me appreciate rounded corners
