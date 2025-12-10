@@ -50,6 +50,9 @@ Works best using Gtk theme "adw".
 
 ### Hyprland
 
+- `Mod+Shift+q` to stop Hyprland
+- `Ctrl+Mod+L` to shutdown, shutdown or reboot
+- `Ctrl+L` to lock the session
 - `Mod+w` to open a web browser
 - `Mod+Enter` to open a shell
 - `Mod+t` to open a file browser scratchpad
