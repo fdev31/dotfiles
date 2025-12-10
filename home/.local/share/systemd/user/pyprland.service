@@ -8,8 +8,7 @@ StartLimitBurst=5
 [Service]
 Type=simple
 ExecStartPre=/bin/sh -c '[ "$XDG_CURRENT_DESKTOP" = "Hyprland" ] || exit 0'
-#ExecStart=/home/fab/pyenv/bin/pypr --debug /tmp/pypr.log
-ExecStart=pypr --debug /tmp/pypr.log
+ExecStart=pypr
 Restart=always
 
 

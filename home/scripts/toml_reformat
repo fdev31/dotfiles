@@ -1,0 +1,15 @@
+#!/bin/env python
+"""
+This script reformats TOML files. It reads from a file provided as a command-line
+argument or from stdin if no argument is given, and outputs the reformatted TOML.
+"""
+
+import sys
+import fileinput
+import tomli
+import tomli_w
+
+with fileinput.input() as f:
+    content = "".join(l for l in fileinput.input())
+    obj = tomli.loads(content)
+print(tomli_w.dumps(obj, multiline_strings=True))
