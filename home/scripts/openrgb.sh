@@ -1,2 +1,2 @@
 #!/bin/sh
-openrgb --mode Static -c ffb1c2
+openrgb --mode Static -c 83d2e3

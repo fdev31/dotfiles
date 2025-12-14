@@ -30,9 +30,9 @@ truncate_title_after_length = 75
 
 [appearance]
 _style = "Gradient"
-primary_color = "#ffb1c2"
-success_color = "#ecbe91"
-text_color = "#ffb1c2"
+primary_color = "#83d2e3"
+success_color = "#bcc5eb"
+text_color = "#83d2e3"
 workspace_colors = [
     "#8a8bf1",
     "#e5c890",
@@ -49,12 +49,12 @@ base = "#f7768e"
 weak = "#e0af68"
 
 [appearance.background_color]
-base = "#713343"
-strong = "#9e8c8f"
-weak = "#8d4a5a"
+base = "#004e5a"
+strong = "#899295"
+weak = "#006877"
 
 [appearance.secondary_color]
-base = "#5b3f45"
+base = "#334a50"
 
 [settings]
 lock_cmd = "hyprlock &"

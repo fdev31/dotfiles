@@ -239,4 +239,4 @@ function gd() {
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 alias ai="llama-cli --hf-repo lmstudio-community/ERNIE-4.5-21B-A3B-PT-GGUF --jinja"
-alias giggle='while true; do ydotool mousemove -x 3 -y 3; sleep 2; ydotool mousemove -x -3 -y -3 ; sleep 2; done'
+alias giggle='while true; do ydotool mousemove -x 3 -y 3; sleep 0.3; ydotool mousemove -x -3 -y -3 ; sleep 0.3; done'

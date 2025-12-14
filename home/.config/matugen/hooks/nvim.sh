@@ -21,7 +21,7 @@ function runstuff() {
             fi
         fi
 
-        nvim --server "\$addr" --remote-send ":lua dofile('$HOME/.config/nvim/lua/config/colors.lua')<CR>"
+        nvim --server "\$addr" --remote-send "<Esc>:lua dofile('$HOME/.config/nvim/lua/config/colors.lua')<CR>"
 
         if [ -n "\$needs_stop" ] && [ -n "\$pid" ]; then
             kill -TSTP "\$pid" >/dev/null 2>&1
