@@ -30,9 +30,9 @@ truncate_title_after_length = 75
 
 [appearance]
 _style = "Gradient"
-primary_color = "#99b5ff"
-success_color = "#bef4a3"
-text_color = "#99b5ff"
+primary_color = "#cfff99"
+success_color = "#c1a3f4"
+text_color = "#cfff99"
 workspace_colors = [
     "#8a8bf1",
     "#e5c890",
@@ -49,7 +49,7 @@ base = "#f7768e"
 weak = "#e0af68"
 
 [appearance.secondary_color]
-base = "#282e3d"
+base = "#333d28"
 
 [settings]
 lock_cmd = "hyprlock &"

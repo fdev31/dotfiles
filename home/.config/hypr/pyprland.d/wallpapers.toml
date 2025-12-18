@@ -26,11 +26,11 @@ output_path = "/tmp/hyprlandcolors.sh"
 post_hook = "sh /tmp/hyprlandcolors.sh"
 
 [wallpapers.templates.hyprlock]
-input_path = "~/color_configs/hyprland/hyprlock.conf"
+input_path = "~/color_configs/hyprlock.conf"
 output_path = "~/.config/hypr/hyprlock.conf"
 
 [wallpapers.templates.fuzzel]
-input_path = "~/color_configs/fuzzel/fuzzel_theme.ini"
+input_path = "~/color_configs/fuzzel_theme.ini"
 output_path = "~/.config/fuzzel/fuzzel_theme.ini"
 
 [wallpapers.templates.kitty]
