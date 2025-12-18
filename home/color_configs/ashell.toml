@@ -48,13 +48,8 @@ opacity = 0.8
 base = "#f7768e"
 weak = "#e0af68"
 
-[appearance.background_color]
-base = "{{colors.primary_container.default.hex}}"
-strong = "{{colors.outline.default.hex}}"
-weak = "{{colors.inverse_primary.default.hex}}"
-
 [appearance.secondary_color]
-base = "{{colors.secondary_container.default.hex}}"
+base = "{{colors.on_primary.default.hex}}"
 
 [settings]
 lock_cmd = "hyprlock &"
@@ -69,6 +64,20 @@ remove_airplane_btn = true
 enable_workspace_filling = false
 max_workspaces = 10
 disable_special_workspaces = true
+visibility_mode = "MonitorSpecific"
+workspace_names = [
+    "",
+    "󰇧",
+    "󰅩",
+    "燎",
+    "󰟞",
+    "",
+    "更",
+    "󰭹",
+    "亮",
+    "👽",
+    "",
+]
 
 [[CustomModule]]
 name = "CustomNotifications"

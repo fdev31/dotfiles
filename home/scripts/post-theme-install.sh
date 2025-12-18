@@ -18,9 +18,9 @@ for file in "${FILES[@]}"; do
         pushd $(dirname "$fname")
             ln -s colors.css "$fname"
         popd
-    elif ! grep colors.css "${fname}"; then
+    else
         # Add @import 'colors.css';
-        sed -i '1i @import "colors.css";' "${fname}"
+        grep colors.css "${fname}" || sed -i '1i @import "colors.css";' "${fname}"
     fi
 done
 

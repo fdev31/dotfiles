@@ -31,14 +31,14 @@ animation = "fromTop"
 command = "[term_classed] main-dropterm"
 class = "main-dropterm"
 size = "75% 60%"
-lazy = "true"
+lazy = true
 max_size = "1920px 100%"
 
 [scratchpads.volume]
 animation = "fromRight"
 command = "pavucontrol"
 class = "org.pulseaudio.pavucontrol"
-lazy = "true"
+lazy = true
 size = "40% 90%"
 max_size = "1080px 100%"
 unfocus = "hide"

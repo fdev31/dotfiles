@@ -8,8 +8,65 @@ path = "~/Images/wallpapers/"
 interval = 60
 unique = false
 recurse = true
-_command = "swww img -t wave --outputs [output] --transition-duration 0.3 --transition-fps 30  [file]"
-command = "hyprctl hyprpaper 'preload [file]'; hyprctl hyprpaper wallpaper '[output], [file]'"
-post_command = "matugen image [file]"
 radius = 16
+color_scheme = "none"
+variant = "islands"
 
+[wallpapers.templates.debug]
+input_path = "~/color_configs/colors.json"
+output_path = "/tmp/colors.json"
+
+[wallpapers.templates.hyprlandsrc]
+input_path = "~/color_configs/hyprland-colors.conf"
+output_path = "~/.config/hypr/sources/colors.conf"
+
+[wallpapers.templates.hyprland]
+input_path = "~/color_configs/hyprlandcolors.sh"
+output_path = "/tmp/hyprlandcolors.sh"
+post_hook = "sh /tmp/hyprlandcolors.sh"
+
+[wallpapers.templates.hyprlock]
+input_path = "~/color_configs/hyprland/hyprlock.conf"
+output_path = "~/.config/hypr/hyprlock.conf"
+
+[wallpapers.templates.fuzzel]
+input_path = "~/color_configs/fuzzel/fuzzel_theme.ini"
+output_path = "~/.config/fuzzel/fuzzel_theme.ini"
+
+[wallpapers.templates.kitty]
+input_path = "~/color_configs/kitty_theme.conf"
+output_path = "~/.config/kitty/current-theme.conf"
+post_hook = "pkill -SIGUSR1 kitty"
+
+[wallpapers.templates.gtk3]
+input_path = "~/color_configs/gtk-colors.css"
+output_path = "~/.config/gtk-3.0/colors.css"
+post_hook = "~/scripts/post-theme-install.sh"
+_post_hook = "gsettings set org.gnome.desktop.interface gtk-theme \"\"; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-{{mode}}"
+
+[wallpapers.templates.gtk4]
+input_path = "~/color_configs/gtk-colors.css"
+output_path = "~/.config/gtk-4.0/colors.css"
+post_hook = "~/scripts/post-theme-install.sh"
+
+[wallpapers.templates.rofi]
+input_path = "~/color_configs/rofi.config.rasi"
+output_path = "~/.config/rofi/config.rasi"
+
+[wallpapers.templates.ashell]
+input_path = "~/color_configs/ashell.toml"
+output_path = "~/.config/ashell/config.toml"
+
+[wallpapers.templates.edges]
+input_path = "~/color_configs/way-edges.jsonc"
+output_path = "~/.config/way-edges/config.jsonc"
+
+[wallpapers.templates.openrgb]
+input_path = "~/color_configs/openrgb.sh"
+output_path = "~/scripts/openrgb.sh"
+post_hook = "sh ~/scripts/openrgb.sh"
+
+[wallpapers.templates.znvim]
+input_path = "~/color_configs/nvim_colors.lua"
+output_path = "~/.config/nvim/lua/config/colors.lua"
+post_hook = "~/color_configs/nvim.sh"
