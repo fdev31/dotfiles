@@ -8,13 +8,11 @@ configuration {
 }
 
 * {
-    font: "Jetbrains Mono 12";
+    font: "Noto 12";
     foreground: {{colors.primary.default.hex}};
-    background-color: {{colors.background.default.hex}};
-    active-background: {{colors.on_primary.default.hex}};
     urgent-background: #ff5555;
     urgent-foreground: #282a36;
-    selected-background: @active-background;
+    selected-background: {{colors.on_primary.default.hex}};
     selected-urgent-background: @urgent-background;
     selected-active-background: @active-background;
     separatorcolor: @active-background;
@@ -22,7 +20,7 @@ configuration {
 }
 
 #window {
-    background-color: @background-color;
+    background-color: {{colors.background.default.rgba | set_alpha 0.5}};
     border:           3;
     border-radius:    8;
     border-color:     @bordercolor;
