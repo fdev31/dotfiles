@@ -25,10 +25,9 @@ Currently using:
 
 - Hyprland (looking at Niri - good but less flexible)
 - [ashell](https://github.com/MalpenZibo/ashell/) (the smallest footprint for the features)
-- [pyprland](https://github.com/fdev31/pyprland) (the glue, helps with configuration and adds fine UX features)
+- [pyprland](https://github.com/fdev31/pyprland) (the glue, helps with configuration and adds fine UX features, eg: *matugen-alike* and scratchpads)
 - zsh (replacing it seems futile)
 - kitty (the best terminal emulator so far)
-- matugen
 - hyprpaper (bug-free when it comes to screen transformation - unlike swww and even swaybg)
 - hyprlock
 - hypridle
