@@ -1,6 +1,6 @@
 /*
 * GTK Colors
-* Generated with Matugen - XXX: DO NOT EDIT
+* Generated with pyprland's wallpapers plugin - XXX: DO NOT EDIT
 
 /* Base selection styling */
 *:selected,
@@ -189,7 +189,7 @@ radiobutton radio {
     color: {{colors.on_secondary.default.hex}};
 }
 
-/* Override adw-gtk3 accent colors with matugen colors */
+/* Override adw-gtk3 accent colors with pyprland's wallpapers plugin colors */
 @define-color accent_bg_color  {{colors.background.default.hex}};
 @define-color accent_fg_color  {{colors.on_background.default.hex}};
 @define-color accent_color  {{colors.secondary.default.hex}};

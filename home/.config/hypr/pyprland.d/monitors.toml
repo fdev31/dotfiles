@@ -3,9 +3,6 @@ plugins = [
     "monitors",
 ]
 
-[monitors]
-relayout_on_config_change = true
-
 [monitors.placement.CJFH27888CUB]
 top_middle_of = "eDP-1"
 

@@ -1,4 +1,3 @@
-
 #!/bin/sh
 
 function unlinkify() {
@@ -16,11 +15,10 @@ for file in "${FILES[@]}"; do
     fi
     if [ ! -e "$fname" ]; then
         pushd $(dirname "$fname")
-            ln -s colors.css "$fname"
+        ln -s colors.css "$fname"
         popd
     else
         # Add @import 'colors.css';
-        grep colors.css "${fname}" || sed -i '1i @import "colors.css";' "${fname}"
+        grep colors.css "${fname}" >/dev/null || sed -i '1i @import "colors.css";' "${fname}"
     fi
 done
-

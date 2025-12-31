@@ -1,4 +1,4 @@
--- XXX: GENERATED FILE - DO NOT EDIT (matugen)
+-- XXX: GENERATED FILE - DO NOT EDIT (pyprland's wallpapers plugin)
 -- hl search: primary
 local hls_color = { bg = "{{colors.primary.default.hex}}", fg = "{{colors.on_primary.default.hex}}" }
 vim.api.nvim_set_hl(0, "Search", hls_color)
