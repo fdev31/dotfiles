@@ -1,2 +1,2 @@
 #!/bin/sh
-openrgb --mode Static -c ffca99
+openrgb --mode Static -c f0ff99

@@ -7,7 +7,6 @@ plugins = [
 animation = "fromLeft"
 command = "uwsm-app -- nemo --name nemo-pad"
 class = "nemo-pad"
-lazy = true
 margin = 100
 pinned = false
 size = "50% 80%"
@@ -16,14 +15,13 @@ size = "50% 80%"
 animation = "fromBottom"
 command = "[term_classed] term-stb ~/scripts/sstb"
 class = "term-stb"
-lazy = true
 size = "75% 45%"
 
 [scratchpads.stblogs]
 animation = "fromTop"
 command = "[term_classed] term-stb-logs ~/scripts/stbLog"
 class = "term-stb-logs"
-lazy = true
+lazy = false
 size = "75% 40%"
 
 [scratchpads.term]
@@ -31,14 +29,12 @@ animation = "fromTop"
 command = "[term_classed] main-dropterm"
 class = "main-dropterm"
 size = "75% 60%"
-lazy = true
 max_size = "1920px 100%"
 
 [scratchpads.volume]
 animation = "fromRight"
 command = "pavucontrol"
 class = "org.pulseaudio.pavucontrol"
-lazy = true
 size = "40% 90%"
 max_size = "1080px 100%"
 unfocus = "hide"

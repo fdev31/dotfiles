@@ -97,7 +97,7 @@ done < <(find "$DOTFILES_DIR" -type f -print0)
 
 echo "DOTFILES_DIR=$DOTFILES_DIR"
 
-# for every service in .local/share/systemd/user, enabled it
+# Enable every service in .local/share/systemd/user
 mkdir -p ~/.local/share/systemd/user/
 for service_file in "$DOTFILES_DIR/.local/share/systemd/user/"*.service; do
     cp ${service_file} ~/.local/share/systemd/user/

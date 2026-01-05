@@ -34,6 +34,9 @@ primary_color = "{{colors.primary.default.hex}}"
 success_color = "{{colors.tertiary.default.hex}}"
 text_color = "{{colors.primary.default.hex}}"
 workspace_colors = [
+    "{{colors.primary.default.hex}}",
+    "{{colors.secondary.default.hex}}",
+    "{{colors.tertiary.default.hex}}",
     "#8a8bf1",
     "#e5c890",
     "#a6d189",

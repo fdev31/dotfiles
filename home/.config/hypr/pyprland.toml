@@ -24,8 +24,6 @@ include_special = false
 
 [menubar]
 command = "uwsm app -- ashell"
-__command = "uwsm app -- python ~/.config/Ax-Shell/main.py"
-_command = "uwsm app -- way-edges"
 monitors = [
     "eDP-1",
     "DP-1",
