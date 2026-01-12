@@ -2,6 +2,7 @@
 Description=Starts pyprland daemon
 After=graphical-session.target
 Wants=graphical-session.target
+Wants=hyprpaper.service
 StartLimitIntervalSec=600
 StartLimitBurst=5
 

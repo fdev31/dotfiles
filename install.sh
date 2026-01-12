@@ -1,8 +1,14 @@
 #!/bin/bash
 
+echo "Please install the adw gtk-theme and set it using nwg-look"
+echo "Press ENTER to proceed with the installation."
+echo "Every file will be backed up."
+read
+
 # chdir into this scripts' directory
 REQUIRED_APPS=(
     "Hyprland"
+    "nwg-look"
     "ashell"
     "fabric-cli"
     "fastfetch"
@@ -20,6 +26,7 @@ REQUIRED_APPS=(
     "starship"
     "uwsm"
     "wl-copy"
+    "adw-bluetooth"
     # "nwg-look"
     # "playerctl"
     # "brightnessctl"
