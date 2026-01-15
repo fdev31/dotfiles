@@ -1,0 +1,16 @@
+[Unit]
+Description=Starts hyprpaper daemon
+After=graphical-session.target
+Wants=graphical-session.target
+StartLimitIntervalSec=600
+StartLimitBurst=5
+
+[Service]
+Type=simple
+ExecStartPre=/bin/sh -c '[ "$XDG_CURRENT_DESKTOP" = "Hyprland" ] || exit 0'
+ExecStart=/usr/bin/hyprpaper
+Restart=always
+
+
+[Install]
+WantedBy=graphical-session.target
