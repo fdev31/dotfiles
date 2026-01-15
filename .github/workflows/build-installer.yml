@@ -7,6 +7,9 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -29,9 +32,19 @@ jobs:
           # Usage: makeself [params] archive_dir file_name label startup_script [args]
           makeself build/payload dotfiles-installer.run "Dotfiles Installer" ./install.sh
 
-      - name: Upload Installer
+      - name: Upload Installer Artifact
         uses: actions/upload-artifact@v4
         with:
           name: dotfiles-installer
           path: dotfiles-installer.run
           retention-days: 5
+
+      - name: Create Release
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: build-${{ github.run_number }}
+          name: Build ${{ github.run_number }}
+          files: dotfiles-installer.run
+          draft: false
+          prerelease: false
