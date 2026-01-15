@@ -1,0 +1,37 @@
+name: Build Dotfiles Installer
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install makeself
+        run: sudo apt-get update && sudo apt-get install -y makeself
+
+      - name: Prepare payload
+        run: |
+          mkdir -p build/payload
+          cp install.sh build/payload/
+          cp -r home build/payload/
+          chmod +x build/payload/install.sh
+
+      - name: Create self-extracting archive
+        run: |
+          # Usage: makeself [params] archive_dir file_name label startup_script [args]
+          makeself build/payload dotfiles-installer.run "Dotfiles Installer" ./install.sh
+
+      - name: Upload Installer
+        uses: actions/upload-artifact@v4
+        with:
+          name: dotfiles-installer
+          path: dotfiles-installer.run
+          retention-days: 5
