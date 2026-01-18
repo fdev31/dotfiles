@@ -37,7 +37,12 @@ See also, [my compatible nvim configuration](https://github.com/fdev31/kickstart
 
 ## Installing
 
+### Via self-installer
+Download and execute the latest .run file in [releases](https://github.com/fdev31/dotfiles/releases)
+
 The installer should be safe to run, and only copies files after backing them up.
+
+### via git clone/download
 
 run `install.sh`
 
