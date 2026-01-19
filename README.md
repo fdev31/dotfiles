@@ -1,23 +1,5 @@
 # fab's desktop environment
 
-Now using Hyprland, I'm a former user of:
-
-- qtile
-- awesome
-- gnome/kde
-- cinnamon/mate
-- enlightenment (e16/e17)
-- xfce
-- ROX desktop
-- pekwm/openbox/fluxbox/windowmaker/fvwm
-- ratpoison and other fun stuff for some moments ;)
-
-I built my requirements over time as a software engineer,
-trying to maintain some usable modern desktop environment configuration based on the best light (not lightest!) options I can find for my own usage.
-
-This is an "export" of the main files I'm using, with some small automated adaptations to make them more generic.
-
-Report any bug so I can improve those and share it again.
 
 ![image](https://raw.githubusercontent.com/fdev31/dotfiles/refs/heads/main/screenshots/1.png)
 
@@ -38,7 +20,7 @@ See also, [my compatible nvim configuration](https://github.com/fdev31/kickstart
 ## Installing
 
 ### Via self-installer
-Download and execute the latest .run file in [releases](https://github.com/fdev31/dotfiles/releases)
+Download and execute the latest  `dotfiles-installer.run` file in [releases](https://github.com/fdev31/dotfiles/releases)
 
 The installer should be safe to run, and only copies files after backing them up.
 
@@ -87,3 +69,24 @@ You can force a specific color for the theme using a command such as `matugen co
 ## Special thanks to
 
 - [Axenide/Ax-shell](https://github.com/Axenide/Ax-Shell) for the matugen support and making me appreciate rounded corners
+
+# About
+
+Now using Hyprland, I'm a former user of:
+
+- qtile
+- awesome
+- gnome/kde
+- cinnamon/mate
+- enlightenment (e16/e17)
+- xfce
+- ROX desktop
+- pekwm/openbox/fluxbox/windowmaker/fvwm
+- ratpoison and other fun stuff for some moments ;)
+
+I built my requirements over time as a software engineer,
+trying to maintain some usable modern desktop environment configuration based on the best light (not lightest!) options I can find for my own usage.
+
+This is an "export" of the main files I'm using, with some small automated adaptations to make them more generic.
+
+Report any bug so I can improve those and share it again.
