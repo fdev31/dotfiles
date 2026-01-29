@@ -4,10 +4,10 @@ plugins = [
 ]
 
 [monitors.placement.CJFH27888CUB]
-top_middle_of = "eDP-1"
+right_end_of = "HDMI-A-1"
 
 [monitors.placement.CJFH277Q3HCB]
-left_bottom_of = "eDP-1"
+top_of = "eDP-1"
 transform = 1
 scale = 0.83
 

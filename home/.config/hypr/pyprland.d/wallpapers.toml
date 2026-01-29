@@ -9,7 +9,6 @@ interval = 60
 unique = false
 recurse = true
 radius = 16
-color_scheme = "none"
 _variant = "islands"
 post_command = "~/scripts/post-theme-install.sh"
 

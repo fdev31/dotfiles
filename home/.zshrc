@@ -33,7 +33,7 @@ else
     br
     timeout 2s garbageDay 2> /dev/null
     # }}}
-    fpath=($fpath $HOME/.zsh/fn)
+    fpath=($HOME/.zsh/completions $HOME/.zsh/fn $fpath)
     # Prompt & Color stuff{{{
     RPS1=%D{%Hh%M}
     export PS1="%n@%m:%~%# "

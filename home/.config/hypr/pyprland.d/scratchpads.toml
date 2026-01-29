@@ -39,8 +39,3 @@ size = "40% 90%"
 max_size = "1080px 100%"
 unfocus = "hide"
 
-[scratchpads.volume.per_monitor]
-DELL = [
-    { animation = "fromLeft", size = "40% 90%", position = "10% 10%" },
-]
-
