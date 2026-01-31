@@ -1,6 +1,6 @@
 [pyprland]
 include = [
-    "~/.config/hypr/pyprland.d",
+    "~/.config/pypr/pyprland.d",
 ]
 plugins = [
     "toggle_special",
@@ -23,7 +23,7 @@ max_workspaces = 9
 include_special = false
 
 [menubar]
-command = "uwsm app -- ashell"
+command = "uwsm-app -- ashell"
 monitors = [
     "eDP-1",
     "DP-1",

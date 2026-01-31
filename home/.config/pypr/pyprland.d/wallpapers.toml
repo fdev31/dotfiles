@@ -9,8 +9,9 @@ interval = 60
 unique = false
 recurse = true
 radius = 16
-_variant = "islands"
+variant = "islands"
 post_command = "~/scripts/post-theme-install.sh"
+online_ratio = 1
 
 [wallpapers.templates.debug]
 input_path = "~/color_configs/colors.json"

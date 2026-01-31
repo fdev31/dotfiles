@@ -7,8 +7,8 @@ StartLimitBurst=5
 
 [Service]
 Type=simple
-ExecStart=sh ~/scripts/startup_commands
-Restart=never
+ExecStart=sh ${HOME}/scripts/startup_commands
+Restart=no
 
 
 [Install]
