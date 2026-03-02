@@ -29,8 +29,8 @@ mode = "Class"
 truncate_title_after_length = 75
 
 [appearance]
-_style = "Gradient"
 primary_color = "{{colors.primary.default.hex}}"
+background_color = "{{colors.surface.default.hex}}"
 success_color = "{{colors.tertiary.default.hex}}"
 text_color = "{{colors.primary.default.hex}}"
 workspace_colors = [

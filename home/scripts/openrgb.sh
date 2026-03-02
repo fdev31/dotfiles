@@ -1,2 +1,2 @@
 #!/bin/sh
-openrgb --mode Static -c ffdc99
+openrgb --mode Static -c ffb199

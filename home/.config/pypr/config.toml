@@ -3,17 +3,18 @@ include = [
     "~/.config/pypr/pyprland.d",
 ]
 plugins = [
-    "toggle_special",
-    "lost_windows",
-    "toggle_special",
-    "shift_monitors",
-    "toggle_dpms",
-    "magnify",
     "expose",
+    "fetch_client_menu",
+    "gamemode",
+    "lost_windows",
+    "magnify",
     "menubar",
     "shift_monitors",
+    "shift_monitors",
+    "toggle_dpms",
+    "toggle_special",
+    "toggle_special",
     "workspaces_follow_focus",
-    "fetch_client_menu",
 ]
 
 [workspaces_follow_focus]

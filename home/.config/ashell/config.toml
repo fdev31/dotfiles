@@ -29,14 +29,14 @@ mode = "Class"
 truncate_title_after_length = 75
 
 [appearance]
-_style = "Gradient"
-primary_color = "#ffdc99"
-success_color = "#c0a3f4"
-text_color = "#ffdc99"
+primary_color = "#ffb199"
+background_color = "#1c1816"
+success_color = "#e9f4a3"
+text_color = "#ffb199"
 workspace_colors = [
-    "#ffdc99",
-    "#e3f4a3",
-    "#c0a3f4",
+    "#ffb199",
+    "#f4a3d9",
+    "#e9f4a3",
     "#8a8bf1",
     "#e5c890",
     "#a6d189",
@@ -52,7 +52,7 @@ base = "#f7768e"
 weak = "#e0af68"
 
 [appearance.secondary_color]
-base = "#3d3628"
+base = "#3d2d28"
 
 [settings]
 lock_cmd = "hyprlock &"

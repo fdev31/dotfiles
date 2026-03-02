@@ -7,11 +7,11 @@ plugins = [
 path = "~/Images/wallpapers/"
 interval = 60
 unique = false
+color_scheme = "earth"
 recurse = true
-radius = 16
-variant = "islands"
+radius = 13
 post_command = "~/scripts/post-theme-install.sh"
-online_ratio = 1
+online_ratio = 0.1
 
 [wallpapers.templates.debug]
 input_path = "~/color_configs/colors.json"
