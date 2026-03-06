@@ -25,18 +25,18 @@ check_cmd = "checkupdates; yay -Qua"
 update_cmd = "kitty --hold yay -Syu"
 
 [window_title]
-mode = "Class"
+mode = "Title"
 truncate_title_after_length = 75
 
 [appearance]
-primary_color = "#ffb199"
+primary_color = "#ffc199"
 background_color = "#1c1816"
-success_color = "#e9f4a3"
-text_color = "#ffb199"
+success_color = "#dcf4a3"
+text_color = "#ffc199"
 workspace_colors = [
-    "#ffb199",
-    "#f4a3d9",
-    "#e9f4a3",
+    "#ffc199",
+    "#f4a3cc",
+    "#dcf4a3",
     "#8a8bf1",
     "#e5c890",
     "#a6d189",
@@ -52,7 +52,7 @@ base = "#f7768e"
 weak = "#e0af68"
 
 [appearance.secondary_color]
-base = "#3d2d28"
+base = "#3d3028"
 
 [settings]
 lock_cmd = "hyprlock &"

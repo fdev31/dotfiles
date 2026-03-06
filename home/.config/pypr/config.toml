@@ -1,6 +1,6 @@
 [pyprland]
 include = [
-    "~/.config/pypr/pyprland.d",
+    "~/.config/pypr/conf.d",
 ]
 plugins = [
     "expose",

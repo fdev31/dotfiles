@@ -9,6 +9,8 @@ command = "uwsm-app -- nemo --name nemo-pad"
 class = "nemo-pad"
 margin = 100
 pinned = false
+preserve_aspect = true
+position = "3% 10%"
 size = "50% 80%"
 
 [scratchpads.stb]

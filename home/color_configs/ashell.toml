@@ -25,7 +25,7 @@ check_cmd = "checkupdates; yay -Qua"
 update_cmd = "kitty --hold yay -Syu"
 
 [window_title]
-mode = "Class"
+mode = "Title"
 truncate_title_after_length = 75
 
 [appearance]
