@@ -128,7 +128,7 @@ scale through fill {
 
 scale slider:hover,
 scale slider:active {
-    background-color: {{colors.primary.default.rgba}};
+    background-color: {{colors.primary.default.rgb}};
     border-color: {{colors.primary.default.hex}};
 }
 
@@ -220,7 +220,7 @@ scale through highlight {
 
 /* Fix slider handles */
 scale slider {
-  background-color: {{colors.secondary.default.hex}};
+  background-color: {{colors.primary.default.hex}};
   border-color: {{colors.secondary.default.hex}};
 }
 

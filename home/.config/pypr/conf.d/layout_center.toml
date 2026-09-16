@@ -3,19 +3,20 @@ plugins = [
     "layout_center",
 ]
 
+
 [layout_center]
-margin = 60
-offset = [
-    0,
-    30,
-]
-next = "movefocus r"
-prev = "movefocus l"
-next2 = "movefocus d"
-prev2 = "movefocus u"
+next = 'hl.dsp.focus({direction="r"})'
+prev = 'hl.dsp.focus({direction="l"})'
+next2 = 'hl.dsp.focus({direction="d"})'
+prev2 = 'hl.dsp.focus({direction="u"})'
+
 style = [
     "border_color rgb(ec8800)",
     "border_size 3",
     "dim_around yes",
 ]
-
+margin = 60
+offset = [
+    0,
+    30,
+]

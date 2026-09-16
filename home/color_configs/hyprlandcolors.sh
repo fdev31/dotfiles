@@ -1,4 +1,5 @@
 #!/bin/sh
 
-hyprctl keyword general:col.active_border "rgb({{colors.primary.default.hex_stripped}}) rgb({{colors.tertiary.default.hex_stripped}}) 30deg"
-hyprctl keyword decoration:shadow:color "rgb({{colors.primary.default.hex_stripped}})"
+COLOR='{angle=130, colors={"rgb({{colors.primary.default.hex_stripped}})" , "rgb({{colors.secondary.default.hex_stripped}})"}}'
+hyprctl eval "hl.config({general={col={active_border=$COLOR, nogroup_border_active=$COLOR}}})"
+hyprctl eval 'hl.config({decoration={shadow={color="rgba({{colors.on_primary.default.hex_stripped | set_lightness: -12 }}A0)"}}})'

@@ -123,7 +123,7 @@ for service_file in "$DOTFILES_DIR/.local/share/systemd/user/"*.service; do
 done
 echo -n "Keyboard layouts to use (eg: fr,es,us)"
 read -r KEYBOARD_LAYOUTS
-sed -i "s/fr,us/$KEYBOARD_LAYOUTS/g" ~/.config/hypr/sources/input.conf
+sed -i "s/fr,us/$KEYBOARD_LAYOUTS/g" ~/.config/hypr/sources/input.lua
 msg "Installation complete!"
 msg "To undo, you can restore your files from $BACKUP_DIR"
 cd ~/.config

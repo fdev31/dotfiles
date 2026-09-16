@@ -10,7 +10,8 @@ pypr = "pypr-client"
 
 [shortcuts_menu]
 command_start = "󰜎"
-engine = "rofi"
+engine = "noctalia"
+parameters = "dmenu"
 
 [shortcuts_menu.entries]
 shutdown = "systemctl poweroff"
@@ -22,6 +23,7 @@ maps = """
 xdg-open \"https://www.google.com/maps/place/$(wl-paste | sed -E 's/[ 	\\n]/+/g')\"
 
 '"""
+TTS = "tts"
 WIKI = "xdg-open http://localhost:8000/"
 "Serial USB Term" = [
     { name = "speed", options = [
@@ -32,8 +34,8 @@ WIKI = "xdg-open http://localhost:8000/"
     "25600",
     "512000",
 ] },
-    { name = "device", command = "ls -1 /dev/ttyUSB*; ls -1 /dev/ttyACM*" },
-    "[term] miniterm --raw --eol LF [device] [speed]",
+    { name = "device", command = "(ls -1 /dev/ttyUSB*; ls -1 /dev/ttyACM*; ls -1 /dev/rfc*) | tail -n 1" },
+    "[term] pyserial-miniterm --raw --eol LF [device] [speed]",
 ]
 "Fetch window" = "[pypr] fetch_client_menu"
 "Jira CheatSheet" = "xdg-open https://cheatography.com/rhorber/cheat-sheets/jira-text-formatting-notation/"
@@ -108,7 +110,19 @@ Reload = "hyprctl reload; [pypr] reload; [pypr] relayout"
 ]
 "Play in a window" = """
 
-    mpv --cache=no --demuxer-lavf-format=video4linux2 --demuxer-lavf-o-set=input_format=mjpeg av://v4l2:$(v4l2-ctl --list-devices |grep -A1 \"[hdmi_capture]\" | tail -n 1  | sed -E 's/^\\s*//g')
+     mpv \
+       --profile=low-latency \
+       --untimed \
+       --no-cache \
+       --demuxer-lavf-o-add=fflags=+nobuffer+discardcorrupt \
+       --demuxer-lavf-o-add=flags=+low_delay \
+       --demuxer-lavf-o-add=input_format=mjpeg \
+       --demuxer-lavf-format=v4l2 \
+       --demuxer-thread=no \
+       --vd-lavc-threads=1 \
+       --framedrop=decoder+vo \
+       --video-latency-hacks=yes \
+       av://v4l2:/dev/video4
 
     """
 

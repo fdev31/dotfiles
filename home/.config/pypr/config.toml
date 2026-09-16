@@ -8,13 +8,19 @@ plugins = [
     "gamemode",
     "lost_windows",
     "magnify",
-    "menubar",
+    #    "menubar",
     "shift_monitors",
     "shift_monitors",
     "toggle_dpms",
     "toggle_special",
     "toggle_special",
     "workspaces_follow_focus",
+]
+
+[stash]
+style = [
+    "border_color rgb(118833)",
+    "border_size 5",
 ]
 
 [workspaces_follow_focus]

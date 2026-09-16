@@ -19,7 +19,7 @@ else
     fi
     case $hostname in
         mobidev)
-            fastfetch --logo-width 25 --logo ~/Images/nodejs.png
+            fastfetch --logo-width 25 --logo ~/Images/nodejs.png --logo-type chafa
             ;;
         gamix)
             fastfetch --logo-width 25 --logo ~/Images/archlinuxlogo.square.png
@@ -127,8 +127,8 @@ else
     export EZA_ICON_SPACING=2
 
     alias kitty-detach='kitty @detach-window --self'
-    alias ls='eza --color-scale=size -t modified --hyperlink'
-    alias d='eza --color-scale=all -t modified --hyperlink'
+    alias ls='eza --color-scale=size -t modified --hyperlink auto'
+    alias d='eza --color-scale=all -t modified --hyperlink auto'
     alias ll='d --icons=always -l'
     alias lla='ll -a'
     alias c='cd ..'
@@ -137,7 +137,6 @@ else
     # kitty
     alias icat='kitty +kitten icat'
     alias kdiff='kitty +kitten diff'
-    alias kssh='kitty +kitten ssh'
     alias ncdu='ncdu -x --color dark'
     alias detach='clone-in-kitty --type=os-window'
     # pacman
@@ -240,3 +239,4 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 alias ai="llama-cli --hf-repo lmstudio-community/ERNIE-4.5-21B-A3B-PT-GGUF --jinja"
 alias giggle='while true; do ydotool mousemove -x 3 -y 3; sleep 0.3; ydotool mousemove -x -3 -y -3 ; sleep 0.3; done'
+(which mise   2>&1 >/dev/null) && eval "$(mise activate zsh)"

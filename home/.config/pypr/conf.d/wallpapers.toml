@@ -1,15 +1,14 @@
 [pyprland]
 plugins = [
-    "wallpapers",
+    #    "wallpapers",
 ]
 
 [wallpapers]
 path = "~/Images/wallpapers/"
 interval = 60
-unique = false
-color_scheme = "earth"
+variant = "islands"
 recurse = true
-radius = 13
+radius = 18
 post_command = "~/scripts/post-theme-install.sh"
 online_ratio = 0.1
 
@@ -18,8 +17,8 @@ input_path = "~/color_configs/colors.json"
 output_path = "/tmp/colors.json"
 
 [wallpapers.templates.hyprlandsrc]
-input_path = "~/color_configs/hyprland-colors.conf"
-output_path = "~/.config/hypr/sources/colors.conf"
+input_path = "~/color_configs/hyprland-colors.lua"
+output_path = "~/.config/hypr/sources/colors.lua"
 
 [wallpapers.templates.hyprland]
 input_path = "~/color_configs/hyprlandcolors.sh"

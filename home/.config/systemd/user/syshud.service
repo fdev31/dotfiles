@@ -1,18 +1,14 @@
 [Unit]
-Description=Starts pyprland daemon
+Description=Starts syshud (OSD)
 After=graphical-session.target
 Wants=graphical-session.target
-Wants=hyprpaper.service
 StartLimitIntervalSec=600
 StartLimitBurst=5
 
 [Service]
 Type=simple
-ExecStartPre=/bin/sh -c '[ "$XDG_CURRENT_DESKTOP" = "Hyprland" ] || exit 0'
-ExecStart=/usr/bin/pypr
+ExecStart=/usr/bin/syshud
 Restart=always
-RestartSec=2
-
 
 [Install]
 WantedBy=graphical-session.target
