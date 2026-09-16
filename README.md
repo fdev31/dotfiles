@@ -5,13 +5,11 @@
 
 Currently using:
 
-- Hyprland (looking at Niri - good but less flexible)
-- [ashell](https://github.com/MalpenZibo/ashell/) (the smallest footprint for the features)
+- Hyprland
+- [noctalia v5](https://github.com/noctalia-dev/noctalia) (great feature set for the weight)
 - [pyprland](https://github.com/fdev31/pyprland) (the glue, helps with configuration and adds fine UX features, eg: *matugen-alike* and scratchpads)
 - zsh (replacing it seems futile)
 - kitty (the best terminal emulator so far)
-- hyprpaper (bug-free when it comes to screen transformation - unlike swww and even swaybg)
-- hyprlock
 - hypridle
 - ...
 
